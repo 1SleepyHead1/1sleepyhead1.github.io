@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+	x
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="style/styles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<div class="container">
+				<nav>
+					<div class="theme-toggle">
+						<input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox" />
+						<label for="theme-toggle-checkbox" class="theme-toggle-label">
+							<i class="fas fa-sun"></i>
+							<i class="fas fa-moon"></i>
+							<span class="theme-toggle-ball"></span>
+						</label>
+					</div>
+					<!-- <div class="logo">
+						<a href="#">Portfolio</a>
+					</div> -->
+					<ul class="nav-links">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Hero Section -->
+		<section id="home" class="hero">
+			<div class="container">
+				<div class="hero-content">
+					<h1>Hi, I'm <span style="color: var(--primary-color)">Roger Paul</span></h1>
+					<h2>Fullstack Web Developer</h2>
+					<div class="cta-buttons">
+						<a href="#projects" class="btn primary-btn">View My Work</a>
+						<a href="#contact" class="btn secondary-btn">Contact Me</a>
+					</div>
+					<div class="social-icons">
+						<a href="https://github.com/1SleepyHead1" target="_blank"><i class="fab fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/roger-paul-peraman-43a36a243/" target="_blank"><i class="fab fa-linkedin"></i></a>
+						<a href="https://www.facebook.com/ekun11211" target="_blank"><i class="fab fa-facebook"></i></a>
+					</div>
+				</div>
+				<div class="hero-image">
+					<div class="profile-img-placeholder"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section id="about" class="about">
+			<div class="container">
+				<h2 class="section-title">About Me</h2>
+				<div class="about-content">
+					<div class="about-text">
+						<p>Hello! I'm a passionate web developer with <b>3 years</b> of experience that focuses on creating clean, user-friendly experiences. I enjoy building everything from small business sites to rich interactive web applications. My journey in web development began with a curiosity for how things work, and it has evolved into a love for crafting seamless digital experiences.</p>
+						<p>I strive to write accessible, clean code and am always looking to learn new technologies. In addition to my technical skills, I value collaboration and communication, believing that the best results come from working together. When I'm not coding, you can find me exploring new frameworks, contributing to open-source projects, or sharing knowledge with others in the developer community.</p>
+						<a href="assets/pdf/resume.pdf" target="_blank" class="btn primary-btn">Download Resume</a>
+					</div>
+					<!-- <div class="about-image">
+						<div class="about-img-placeholder"></div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills Section -->
+		<section id="skills" class="skills">
+			<div class="container">
+				<h2 class="section-title">My Skills</h2>
+				<div class="skills-container">
+					<div class="skill-category">
+						<h3>Frontend</h3>
+						<div class="skills-grid">
+							<div class="skill-item">
+								<div class="skill-icon" data-level="100%"><i class="fab fa-html5"></i> HTML5</div>
+								<div class="skill-bar">
+									<div class="skill-level frontend" data-width="100%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-icon" data-level="75%"><i class="fab fa-css3-alt"></i> CSS3</div>
+								<div class="skill-bar">
+									<div class="skill-level frontend" data-width="75%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-icon" data-level="80%"><i class="fab fa-js-square"></i> JavaScript/jQuery</div>
+								<div class="skill-bar">
+									<div class="skill-level frontend" data-width="80%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-icon" data-level="50%"><i class="fab fa-react"></i> React</div>
+								<div class="skill-bar">
+									<div class="skill-level frontend" data-width="50%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-icon" data-level="80%"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+								<div class="skill-bar">
+									<div class="skill-level frontend" data-width="80%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-icon" data-level="50%"><i class="fab fa-tailwindcss"></i> Tailwind CSS</div>
+								<div class="skill-bar">
+									<div class="skill-level frontend" data-width="50%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="skill-category">
+						<h3>Backend</h3>
+						<div class="skills-grid">
+							<div class="skill-item">
+								<div class="skill-icon" data-level="90%"><i class="fab fa-php"></i> PHP</div>
+								<div class="skill-bar">
+									<div class="skill-level backend" data-width="90%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-icon" data-level="50%"><i class="fas fa-code-branch"></i> CakePHP</div>
+								<div class="skill-bar">
+									<div class="skill-level backend" data-width="50%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-icon" data-level="70%"><i class="fab fa-laravel"></i> Laravel</div>
+								<div class="skill-bar">
+									<div class="skill-level backend" data-width="70%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-icon" data-level="80%"><i class="fas fa-database"></i> SQL</div>
+								<div class="skill-bar">
+									<div class="skill-level backend" data-width="80%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-icon" data-level="50%"><i class="fab fa-java"></i> Java</div>
+								<div class="skill-bar">
+									<div class="skill-level backend" data-width="50%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="skill-category">
+						<h3>Tools & Others</h3>
+						<div class="skills-grid">
+							<div class="skill-item">
+								<div class="skill-icon" data-level="60%"><i class="fab fa-git"></i> Git</div>
+								<div class="skill-bar">
+									<div class="skill-level others" data-width="60%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-icon" data-level="80%"><i class="fas fa-mobile-alt"></i> Responsive Design</div>
+								<div class="skill-bar">
+									<div class="skill-level others" data-width="80%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-icon" data-level="70%"><i class="fas fa-universal-access"></i> Web Accessibility</div>
+								<div class="skill-bar">
+									<div class="skill-level others" data-width="70%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-icon" data-level="75%"><i class="fas fa-plug"></i> APIs</div>
+								<div class="skill-bar">
+									<div class="skill-level others" data-width="75%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section id="projects" class="projects">
+			<div class="container">
+				<h2 class="section-title">My Projects</h2>
+				<div class="project-filters">
+					<button class="filter-btn active" data-filter="all">All</button>
+					<button class="filter-btn" data-filter="web">Websites</button>
+					<button class="filter-btn" data-filter="app">Web Apps</button>
+				</div>
+				<div class="projects-grid">
+					<div class="project-card" data-category="web">
+						<div class="project-img">
+							<img src="assets/images/projects/css-portfolio.png" alt="css-portfolio" />
+						</div>
+						<div class="project-info">
+							<h3>HTML & CSS Portfolio</h3>
+							<p>A simple portfolio website built with HTML and CSS.</p>
+							<div class="project-tags">
+								<span>HTML 5</span>
+								<span>CSS 3</span>
+								<span>JavaScript</span>
+							</div>
+							<div class="project-links">
+								<a href="#" class="btn small-btn highlight" target="_blank" title="Live Demo">Live Demo</a>
+								<!-- <a href="#" class="btn small-btn" target="_blank">Code</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card" data-category="app">
+						<div class="project-img">
+							<img src="assets/images/projects/dtqcsn.png" alt="dtqcsn" />
+						</div>
+						<div class="project-info">
+							<h3>Document Tracker With QR Code & SMS Notifier</h3>
+							<p>A web application that allows users to track documents with QR codes and receive SMS notifications.</p>
+							<div class="project-tags">
+								<span>HTML 5</span>
+								<span>CSS 3</span>
+								<span>Bootstrap 5</span>
+								<span>JavaScript/jQuery</span>
+								<span>PHP</span>
+								<span>MySQL</span>
+							</div>
+							<div class="project-links">
+								<a href="https://dtqcsn.com" class="btn small-btn highlight" target="_blank" title="Live Demo">Live Demo</a>
+								<!-- <a href="#" class="btn small-btn" target="_blank">Code</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card" data-category="app">
+						<div class="project-img">
+							<img src="assets/images/projects/airworks.png" alt="airworks" />
+						</div>
+						<div class="project-info">
+							<h3>Airworks</h3>
+							<p>A school management system that allows users to manage students, teachers, and other school staff.</p>
+							<div class="project-tags">
+								<span>HTML 5</span>
+								<span>CSS 3</span>
+								<span>Bootstrap 5</span>
+								<span>JavaScript/jQuery</span>
+								<span>PHP</span>
+								<span>MySQL</span>
+							</div>
+							<div class="project-links">
+								<a href="https://airworks.e2econsultancy.ph" class="btn small-btn highlight" target="_blank" title="Live Demo">Live Demo</a>
+								<!-- <a href="#" class="btn small-btn" target="_blank">Code</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card" data-category="app">
+						<div class="project-img">
+							<img src="assets/images/projects/bio-web.png" alt="bioessence" />
+						</div>
+						<div class="project-info">
+							<h3>Bioessence</h3>
+							<p>A website for a company that sells cosmetic products.</p>
+							<div class="project-tags">
+								<span>HTML 5</span>
+								<span>CSS 3</span>
+								<span>Bootstrap 5</span>
+								<span>JavaScript/jQuery</span>
+							</div>
+							<div class="project-links">
+								<a href="https://bioessence.com.ph" class="btn small-btn highlight" target="_blank" title="Live Demo">Live Demo</a>
+								<!-- <a href="#" class="btn small-btn" target="_blank">Code</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card" data-category="app">
+						<div class="project-img">
+							<img src="assets/images/projects/bio-webapp.png" alt="bio-webapp" />
+						</div>
+						<div class="project-info">
+							<h3>Bioessence ERP</h3>
+							<p>An ERP web application for Bioessence.</p>
+							<div class="project-tags">
+								<span>HTML 5</span>
+								<span>CSS 3</span>
+								<span>Bootstrap 5</span>
+								<span>JavaScript/jQuery</span>
+								<span>PHP</span>
+								<span>MySQL</span>
+							</div>
+							<div class="project-links">
+								<a href="https://bioessence.e2econsultancy.ph" class="btn small-btn highlight" target="_blank" title="Live Demo">Live Demo</a>
+								<!-- <a href="#" class="btn small-btn" target="_blank">Code</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card" data-category="app">
+						<div class="project-img">
+							<img src="assets/images/projects/esse.png" alt="esse" />
+						</div>
+						<div class="project-info">
+							<h3>ESSE ERP</h3>
+							<p>An ERP with POS web application for ESSE.</p>
+							<div class="project-tags">
+								<span>HTML 5</span>
+								<span>CSS 3</span>
+								<span>Bootstrap 5</span>
+								<span>JavaScript/jQuery</span>
+								<span>PHP</span>
+								<span>MySQL</span>
+							</div>
+							<div class="project-links">
+								<a href="https://esse.e2econsultancy.ph" class="btn small-btn highlight" target="_blank" title="Live Demo">Live Demo</a>
+								<!-- <a href="#" class="btn small-btn" target="_blank">Code</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card" data-category="app">
+						<div class="project-img">
+							<img src="assets/images/projects/plas-erp.png" alt="plas-erp" />
+						</div>
+						<div class="project-info">
+							<h3>PLAS Construction ERP</h3>
+							<p>An ERP web application for PLAS Construction.</p>
+							<div class="project-tags">
+								<span>HTML 5</span>
+								<span>CSS 3</span>
+								<span>Bootstrap 5</span>
+								<span>JavaScript/jQuery</span>
+								<span>PHP</span>
+								<span>MySQL</span>
+							</div>
+							<div class="project-links">
+								<a href="https://construction.plasbusiness.com" class="btn small-btn highlight" target="_blank" title="Live Demo">Live Demo</a>
+								<!-- <a href="#" class="btn small-btn" target="_blank">Code</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card" data-category="app">
+						<div class="project-img">
+							<img src="assets/images/projects/plas-payroll.png" alt="plas-payroll" />
+						</div>
+						<div class="project-info">
+							<h3>PLAS Payroll System</h3>
+							<p>A payroll system for PLAS Construction.</p>
+							<div class="project-tags">
+								<span>HTML 5</span>
+								<span>CSS 3</span>
+								<span>Bootstrap 5</span>
+								<span>JavaScript/jQuery</span>
+								<span>PHP</span>
+								<span>MySQL</span>
+							</div>
+							<div class="project-links">
+								<a href="https://payroll.plasbusiness.com" class="btn small-btn highlight" target="_blank" title="Live Demo">Live Demo</a>
+								<!-- <a href="#" class="btn small-btn" target="_blank">Code</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card" data-category="app">
+						<div class="project-img">
+							<img src="assets/images/projects/jbn.png" alt="jbn" />
+						</div>
+						<div class="project-info">
+							<h3>JBN ERP System web application</h3>
+							<p>A web application dedicated for inventory management and sales tracking.</p>
+							<div class="project-tags">
+								<span>HTML 5</span>
+								<span>CSS 3</span>
+								<span>Bootstrap 5</span>
+								<span>JavaScript/jQuery</span>
+								<span>PHP</span>
+								<span>MySQL</span>
+							</div>
+							<div class="project-links">
+								<a href="https://jbn.e2econsultancy.ph" class="btn small-btn highlight" target="_blank" title="Live Demo">Live Demo</a>
+								<!-- <a href="#" class="btn small-btn" target="_blank">Code</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="project-card" data-category="app">
+						<div class="project-img">
+							<img src="assets/images/projects/hivehr.png" alt="hivehr" />
+						</div>
+						<div class="project-info">
+							<h3>HiveHR</h3>
+							<p>A web application dedicated for human resource management and performance tracking.</p>
+							<div class="project-tags">
+								<span>HTML 5</span>
+								<span>CSS 3</span>
+								<span>Bootstrap 5</span>
+								<span>JavaScript/jQuery</span>
+								<span>PHP</span>
+								<span>MySQL</span>
+							</div>
+							<div class="project-links">
+								<a href="https://hivehr.e2econsultancy.ph" class="btn small-btn highlight" target="_blank" title="Live Demo">Live Demo</a>
+								<!-- <a href="#" class="btn small-btn" target="_blank">Code</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="contact">
+			<div class="container">
+				<h2 class="section-title">Get In Touch</h2>
+				<div class="contact-content">
+					<div class="contact-info">
+						<div class="contact-item">
+							<i class="fas fa-envelope"></i>
+							<p>peramanrogerp@gmail.com</p>
+						</div>
+						<div class="contact-item">
+							<i class="fas fa-phone"></i>
+							<p>+639289294438</p>
+						</div>
+						<div class="contact-item">
+							<i class="fas fa-map-marker-alt"></i>
+							<p>Iloilo City, Philippines</p>
+						</div>
+						<div class="social-icons">
+							<a href="https://github.com/1SleepyHead1" target="_blank"><i class="fab fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/roger-paul-peraman-43a36a243/" target="_blank"><i class="fab fa-linkedin"></i></a>
+							<a href="https://www.facebook.com/ekun11211" target="_blank"><i class="fab fa-facebook"></i></a>
+						</div>
+					</div>
+					<div class="contact-form">
+						<form>
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" id="name" required />
+							</div>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" id="email" required />
+							</div>
+							<div class="form-group">
+								<label for="subject">Subject</label>
+								<input type="text" id="subject" required />
+							</div>
+							<div class="form-group">
+								<label for="message">Message</label>
+								<textarea id="message" rows="5" required></textarea>
+							</div>
+							<button type="submit" class="btn primary-btn">Send Message</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<p>
+					&copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					All Rights Reserved
+				</p>
+			</div>
+		</footer>
+
+		<!-- JavaScript -->
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -435,7 +435,7 @@ const navLinksForActiveState = document.querySelectorAll(".nav-links a");
 const observerOptions = {
 	root: null, // Use viewport as root
 	rootMargin: "-100px 0px -100px 0px", // Add negative top margin to account for header height
-	threshold: 0.3 // Trigger when 30% of section is visible
+	threshold: 0.1 // Decrease threshold to 0.1 to make detection more sensitive
 };
 
 // Create the Intersection Observer
@@ -445,6 +445,7 @@ const sectionObserver = new IntersectionObserver((entries) => {
 		if (entry.isIntersecting) {
 			// Get the id of the section in view
 			const id = entry.target.getAttribute("id");
+			console.log("Section in view:", id); // Debug which section is detected
 
 			// Remove active class from all nav links
 			navLinksForActiveState.forEach((link) => {
@@ -460,7 +461,14 @@ const sectionObserver = new IntersectionObserver((entries) => {
 	});
 }, observerOptions);
 
+// Explicitly debug projects section
+const projectsSection = document.getElementById("projects");
+// if (projectsSection) {
+// 	console.log("Projects section found:", projectsSection.id);
+// }
+
 // Start observing all sections
 sections.forEach((section) => {
+	console.log("Observing section:", section.id); // Debug which sections are being observed
 	sectionObserver.observe(section);
 });
